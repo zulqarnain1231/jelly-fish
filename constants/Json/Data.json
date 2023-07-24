@@ -1,0 +1,36 @@
+{
+  "menu": [
+    {
+      "name": "Home",
+      "route": "/"
+    },
+    {
+      "name": "About",
+      "route": "#about"
+    },
+    {
+      "name": "Our Mission",
+      "route": "#mission"
+    },
+    {
+      "name": "Why Us",
+      "route": "#whyUs"
+    },
+    {
+      "name": "Tokenomics",
+      "route": "#tokenomics"
+    },
+    {
+      "name": "RoadMap",
+      "route": "#roadmap"
+    },
+    {
+      "name": "Media",
+      "route": "#media"
+    },
+    {
+      "name": "FAQS",
+      "route": "#faqs"
+    }
+  ]
+}
