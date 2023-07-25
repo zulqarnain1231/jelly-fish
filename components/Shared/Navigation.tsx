@@ -36,7 +36,7 @@ const Navigation = () => {
             );
           })}
 
-          <OutlinedButton text=" Start building" event={() => {}} />
+          <OutlinedButton text=" Start building" />
         </div>
         <RiMenu3Line
           onClick={toggleDrawer}
@@ -64,7 +64,7 @@ const Navigation = () => {
             );
           })}
 
-          <OutlinedButton text=" Start building" event={() => {}} />
+          <OutlinedButton text=" Start building" />
           <div className="h-[34px] w-[34px] flex items-center justify-center bg-red-500 rounded-full absolute top-4 right-4">
             <MdOutlineClose
               onClick={toggleDrawer}
