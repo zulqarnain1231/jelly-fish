@@ -56,6 +56,7 @@ const Navigation = () => {
             return (
               <Link
                 key={index}
+                onClick={toggleDrawer}
                 href={item.route}
                 className="font-[500] text-black-main text-[16px] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-primary hover:after:w-full hover:after:duration-200"
               >
@@ -64,7 +65,7 @@ const Navigation = () => {
             );
           })}
 
-          <OutlinedButton text=" Start building" />
+          <OutlinedButton text=" Start building" event={toggleDrawer} />
           <div className="h-[34px] w-[34px] flex items-center justify-center bg-red-500 rounded-full absolute top-4 right-4">
             <MdOutlineClose
               onClick={toggleDrawer}
