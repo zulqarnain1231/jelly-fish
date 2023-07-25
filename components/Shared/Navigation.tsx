@@ -8,6 +8,7 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { RiMenu3Line } from "react-icons/ri";
 import { MdOutlineClose } from "react-icons/md";
+import OutlinedButton from "./Buttons/OutlinedButton";
 
 const Navigation = () => {
   const { menu } = Data;
@@ -16,7 +17,7 @@ const Navigation = () => {
     setIsOpen((prevvalue) => !prevvalue);
   };
   return (
-    <ComponentWrapper style="h-[70px] bg-white-main">
+    <ComponentWrapper style="h-[80px] bg-white-main shadow-sm">
       <nav className="w-full h-full flex items-center justify-between">
         {" "}
         <Link href={"/"} className="h-[50px] w-[150px] relative">
@@ -35,9 +36,7 @@ const Navigation = () => {
             );
           })}
 
-          <button className="h-[46px] w-[140px] flex items-center justify-center border-[2px] border-brand-primary hover:bg-gray-200/30 hover:duration-200 text-brand-primary text-[16px] font-semibold shadow-main rounded-[6px]">
-            Start building
-          </button>
+          <OutlinedButton text=" Start building" event={() => {}} />
         </div>
         <RiMenu3Line
           onClick={toggleDrawer}
@@ -65,9 +64,7 @@ const Navigation = () => {
             );
           })}
 
-          <button className="h-[46px] w-[140px] flex items-center justify-center border-[2px] border-brand-primary hover:bg-gray-200/30 hover:duration-200 text-brand-primary text-[16px] font-semibold shadow-main rounded-[6px]">
-            Start building
-          </button>
+          <OutlinedButton text=" Start building" event={() => {}} />
           <div className="h-[34px] w-[34px] flex items-center justify-center bg-red-500 rounded-full absolute top-4 right-4">
             <MdOutlineClose
               onClick={toggleDrawer}
