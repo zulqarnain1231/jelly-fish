@@ -2,10 +2,233 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
 }
-body{
+body {
   padding: 0;
   margin: 0;
+}
+
+.underlineEffect::before {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 0%;
+  bottom: -1px;
+  left: 50%;
+  background-color: #4080f2;
+  transition: 0.5s;
+}
+
+.underlineEffect::after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 0%;
+  bottom: -1px;
+  right: 50%;
+  background-color: #4080f2;
+  outline: none;
+  transition: 0.5s;
+}
+
+.underlineEffect:hover::before {
+  width: 50%;
+}
+
+.underlineEffect:hover::after {
+  width: 50%;
+}
+
+.mapCard {
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 32px 32px 65px #e3e3e3, -32px -32px 65px #ffffff;
+}
+/* filled button styles here */
+.filledButton {
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.filledButton:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.filledButton:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #943ce3;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.filledButton:hover:before {
+  top: -35%;
+  background-color: #943ce3;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.filledButton:hover:after {
+  top: -45%;
+  background-color: #943ce3;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* gradient here */
+.mainGradient {
+  background: rgb(64, 128, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 128, 242, 1) 29%,
+    rgba(148, 60, 227, 1) 57%
+  );
+}
+
+/* styles for mui timeline */
+.MuiTimeline-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiTimelineItem-root {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+.MuiTimelineSeparator-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.MuiTimelineConnector-root {
+  width: 4px;
+  background: #943ce3;
+  height: 160px !important;
+}
+
+.MuiTimelineDot-root {
+  color: #943ce3 !important;
+  background-color: #943ce3 !important;
+}
+
+.MuiTimeline-positionAlternate
+  .MuiTimelineContent-positionAlternate:nth-of-type(even) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: left;
+}
+.MuiTimeline-positionAlternate
+  .MuiTimelineContent-positionAlternate:nth-of-type(odd) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.MuiTimeline-positionAlternate
+  li:nth-of-type(even)
+  .MuiTimelineContent-positionAlternate {
+  justify-content: flex-end;
+}
+
+.MuiTimelineContent-positionAlternate {
+  margin-top: 14px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.MuiTimelineItem-positionRight:before {
+  content: none !important;
+}
+
+.MuiTimeline-positionRight .MuiTimelineConnector-root {
+  width: 4px;
+  background: #943ce3;
+  height: 170px;
+}
+
+/* Positioned left timeline customization */
+.MuiTimelineItem-positionLeft {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.MuiTimelineItem-positionLeft:before {
+  content: none !important;
+}
+
+.MuiTimeline-positionLeft .MuiTimelineContent-root {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px 8px;
+}
+
+/* .MuiTimeline-positionLeft .MuiTimelineConnector-root {
+  width: 0px;
+  border-left: 4px dashed #164f18 !important;
+  background: none !important;
+  height: 77px !important;
+} */
+
+.MuiTimelineContent-positionRight {
+  margin-top: 18px !important;
+}
+.MuiTimelineContent-positionLeft {
+  padding: 0px 8px !important;
+}
+/*slick style */
+.slick-slider {
+  position: unset !important;
+}
+.slick-dots {
+  position: unset !important;
+  margin-top: 10px !important;
+}
+.slick-dots li button::before {
+  font-size: 10px !important;
+  color: #943ce3 !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #943ce3 !important;
+  opacity: unset !important;
+}
+
+.slick-slide .slick-active div {
+  display: unset !important;
+}
+@media (min-width: 1025px) {
+  .roadMap {
+    background-color: #f5f7fd;
+    clip-path: polygon(0 11%, 100% 0, 100% 90%, 0 100%);
+  }
 }

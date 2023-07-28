@@ -17,7 +17,7 @@ const Hero = () => {
             depth=".5rem"
             direction="both"
             event="pointer"
-            eventRotation="60deg"
+            eventRotation="30deg"
             eventDirection="default"
             fade={false}
             layers={10}

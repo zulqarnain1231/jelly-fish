@@ -12,10 +12,7 @@
       "name": "Our Mission",
       "route": "#mission"
     },
-    {
-      "name": "Why Us",
-      "route": "#whyUs"
-    },
+
     {
       "name": "Tokenomics",
       "route": "#tokenomics"
@@ -23,14 +20,51 @@
     {
       "name": "RoadMap",
       "route": "#roadmap"
-    },
-    {
-      "name": "Media",
-      "route": "#media"
-    },
-    {
-      "name": "FAQS",
-      "route": "#faqs"
     }
-  ]
+  ],
+  "about": [
+    "JellyFish Mobile is a groundbreaking MVNO that integrates web3 technologies with mobile connectivity.",
+    "Mission: Revolutionize the internet experience and access to online services.",
+    "Unlock the full potential of web3 on your mobile device, bridging traditional telecom networks and web3 platform.",
+    "Connect to DeFi apps, deploy smart contracts, and access DApps seamlessly.",
+    "Prioritize security and privacy with advanced encryption and cold wallet isolation.",
+    "Offers a wide range of web3 features, DeFi connections, and DApp support.",
+    "Join JellyFish Mobile for cutting-edge mobile connectivity and web3 services.",
+    "Experience the future of mobile internet and redefine digital interactions."
+  ],
+  "roadMap": {
+    "phase1": [
+      "MVP dApp",
+      "Merchant API",
+      "SSI API",
+      "SSO API ",
+      "Campaign to acquire 1000 Agents",
+      "Campaign to acquire 1000 Agents",
+      "Telegram Channel"
+    ],
+    "phase2": [
+      "Beta dApp lauch",
+      "Initial 1000 Agents",
+      "10 Merchants",
+      "Airdrop Data Tokens monthly for testers",
+      "Integration to TradFi for payment",
+      "Integration to selected Merchant Partners for Wallet/SSI + SSO",
+      "Initial Token Launch on CEX"
+    ],
+    "phase3": [
+      "Lauch Jellyfish",
+      "Onboard Subscribers enmass to the platform",
+      "Strong momentum in user acquisition target 100k",
+      "5k Merchants",
+      "10k Agents",
+      "Launch token on 2nd CEX"
+    ],
+    "phase4": [
+      "Ensure Scalability and effective growth loops",
+      "Hit 500k Subs",
+      "30k Agents",
+      "Hit 10k Merchants",
+      "Launch token on 3rd CEX"
+    ]
+  }
 }
