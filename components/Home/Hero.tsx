@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="w-full h-full">
         <div className="lg:w-[60%] w-full h-full flex flex-col lg:items-start items-center justify-center gap-12">
           <h1 className="md:text-7xl text-5xl text-brand-secondary font-semibold lg:text-left text-center">
-            Connecting the world to Web3
+            Connecting the world to Future
           </h1>
           <p className="text-[18px] leading-6 font-medium lg:text-left text-center">
             Jellyfish is the industry-standard Web3 services platform connecting

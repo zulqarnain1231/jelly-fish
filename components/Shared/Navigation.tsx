@@ -2,13 +2,14 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ComponentWrapper from "./Wrappers/ComponentWrapper";
+import Wrapper from "./Wrapper";
 import Data from "../../constants/Json/Data.json";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { RiMenu3Line } from "react-icons/ri";
 import { MdOutlineClose } from "react-icons/md";
 import OutlinedButton from "./Buttons/OutlinedButton";
+import Img from "./Image/Img";
 
 const Navigation = () => {
   const { menu } = Data;
@@ -17,11 +18,11 @@ const Navigation = () => {
     setIsOpen((prevvalue) => !prevvalue);
   };
   return (
-    <ComponentWrapper style="h-[80px] bg-white-main shadow-sm">
+    <Wrapper style="h-[80px] bg-white-main shadow-sm">
       <nav className="w-full h-full flex items-center justify-between">
         {" "}
-        <Link href={"/"} className="h-[50px] w-[150px] relative">
-          <Image src={"/jelly-fish-mix-dark.png"} alt="" fill />
+        <Link href={"/"} className="h-[50px] w-[180px]">
+          <Img imgContainer="h-full w-full" src={"/jelly-fish-mix-dark.png"} />
         </Link>
         <div className="lg:flex hidden items-center justify-start gap-8">
           {menu.map((item: any, index: number) => {
@@ -29,15 +30,14 @@ const Navigation = () => {
               <Link
                 key={index}
                 href={item.route}
-                className="font-[500] text-black-main text-[16px] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-primary hover:after:w-full hover:after:duration-200"
+                className="font-[500] text-black-main text-[16px] relative underlineEffect"
               >
                 {item.name}
               </Link>
             );
           })}
-
-          <OutlinedButton text=" Start building" />
         </div>
+        <OutlinedButton text="Start building" style="h-[46px] w-[140px] md:flex hidden" />
         <RiMenu3Line
           onClick={toggleDrawer}
           className="lg:hidden inline-block h-[24px] w-[24px] text-black-main"
@@ -74,7 +74,7 @@ const Navigation = () => {
           </div>
         </div>
       </Drawer>
-    </ComponentWrapper>
+    </Wrapper>
   );
 };
 
