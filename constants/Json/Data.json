@@ -2,24 +2,24 @@
   "menu": [
     {
       "name": "Home",
-      "route": "/"
+      "route": "hero"
     },
     {
       "name": "About",
-      "route": "#about"
+      "route": "about"
     },
     {
       "name": "Our Mission",
-      "route": "#mission"
+      "route": "mission"
     },
 
     {
       "name": "Tokenomics",
-      "route": "#tokenomics"
+      "route": "tokenomics"
     },
     {
       "name": "RoadMap",
-      "route": "#roadmap"
+      "route": "roadmap"
     }
   ],
   "about": [
@@ -39,32 +39,323 @@
       "SSI API",
       "SSO API ",
       "Campaign to acquire 1000 Agents",
-      "Campaign to acquire 1000 Agents",
-      "Telegram Channel"
+      "Twitter Community",
+      "Telegram Channel",
+      "Initial Token Launch on CEX"
     ],
     "phase2": [
-      "Beta dApp lauch",
+      "POC launch",
       "Initial 1000 Agents",
       "10 Merchants",
       "Airdrop Data Tokens monthly for testers",
       "Integration to TradFi for payment",
       "Integration to selected Merchant Partners for Wallet/SSI + SSO",
-      "Initial Token Launch on CEX"
+      "50k Active Subs through Merchant Partner network",
+      "Token listing on 2nd CEX"
     ],
     "phase3": [
-      "Lauch Jellyfish",
-      "Onboard Subscribers enmass to the platform",
+      "Lauch Jellyfish Mobile Product Offerings",
+      "Onboard Subscribers En-mass to the platform through CEX Partners",
       "Strong momentum in user acquisition target 100k",
       "5k Merchants",
       "10k Agents",
-      "Launch token on 2nd CEX"
+      "Launch token on 3rd CEX"
     ],
     "phase4": [
       "Ensure Scalability and effective growth loops",
       "Hit 500k Subs",
       "30k Agents",
-      "Hit 10k Merchants",
-      "Launch token on 3rd CEX"
+      "Hit 10k Merchants"
     ]
-  }
+  },
+  "AccordinData": {
+    "Data": [
+      {
+        "Title": "What is web3 technology, and how does JellyFish Mobile incorporate it into their services?",
+        "AriaControls": "panel1a-content",
+        "Id": "panel1a-header",
+        "Detail": " Web3 technology refers to the decentralized web, where blockchain and cryptocurrency-based applications enable peer-to-peer interactions and greater user control over their data. JellyFish Mobile integrates web3 technology by offering seamless access to decentralized applications,enhanced privacy features, and secure transactions within their mobile platform."
+      },
+      {
+        "Title": "How does JellyFish Mobile prioritize security for its users?",
+        "AriaControls": "panel2a-content",
+        "Id": "panel2a-header",
+        "Detail": "JellyFish Mobile places a high emphasis on security by implementing robust measures to protect user data. They utilize encryption techniques, secure authentication protocols, and regular security audits to safeguard sensitive information. Additionally, they stay updated with the latest security standards and work with trusted partners to ensure a secure mobile experience."
+      },
+      {
+        "Title": "What privacy features does JellyFish Mobile provide?",
+        "AriaControls": "panel3a-content",
+        "Id": "panel3a-header",
+        "Detail": "JellyFish Mobile understands the importance of privacy and offers enhanced privacy features. These may include options to control data sharing, encrypted messaging services, private browsing modes, and anonymized transaction capabilities. They strive to give users control over their personal information and minimize exposure to third-party entities."
+      },
+      {
+        "Title": "How can I purchase JFish tokens?",
+        "AriaControls": "panel4a-content",
+        "Id": "panel4a-header",
+        "Detail": "JFish will be on on the",
+        "link": "P2B exchange",
+        "route": "https://p2pb2b.com/"
+      },
+      {
+        "Title": "JFish SmartContract Address?",
+        "AriaControls": "panel5a-content",
+        "Id": "panel5a-header",
+        "Detail": "Our smartcontact can be found at",
+        "link": "0xCdeb595293511115d9D9d44B189Cc0Da4a08cfAf",
+        "route": "https://etherscan.io/address/0xCdeb595293511115d9D9d44B189Cc0Da4a08cfAf"
+      }
+    ]
+  },
+  "Tokenomics": {
+    "chartData": [
+      { "name": "Pre-Seed Tokens", "value": 4 },
+      { "name": "1st Air Drop Event", "value": 3 },
+      { "name": "List of Token on 1st CEX", "value": 25 },
+      { "name": "2nd Air Drop Event", "value": 2 },
+      { "name": "List of Token on 2nd CEX", "value": 25 },
+      { "name": "3rd Air Drop Event", "value": 1 },
+      { "name": "List of Token on 2nd CEX", "value": 25 },
+      { "name": "Developers Token Unlock", "value": 15 }
+    ],
+    "colors": [
+      "#706fd3",
+      "#474787",
+      "#f53b57",
+      "#ff5e57",
+      "#FEA47F",
+      "#FD7272",
+      "#EAB543",
+      "#fed330"
+    ]
+  },
+  "WhyUs": [
+    {
+      "title": "UnParalleled Security",
+      "detail": "At JellyFish Mobile, we prioritize the security of your data and funds above all else. With advanced encryption, authentication protocols, and cold wallet isolation, we ensure that your sensitive information remains secure and your funds are protected. Our robust security measures are designed to safeguard your privacy and provide you with peace of mind.",
+      "picture": "/Vectors/security.png",
+      "alignLeft": true
+    },
+    {
+      "title": "Seamless Integration With Web3",
+      "detail": "JellyFish Mobile seamlessly integrates with web3 platforms, enabling you to tap into the power of decentralized services. Whether it's accessing decentralized finance (DeFi) applications or centralized finance (CeFi) platforms, our integration allows you to revolutionize your financial transactions. Enjoy the benefits of trustless transactions, automation, and seamless connectivity with the web3 ecosystem. ",
+      "picture": "/Vectors/block-chain.png",
+      "alignLeft": false
+    },
+    {
+      "title": "Enhanced Privacy",
+      "detail": "We understand the importance of safeguarding your digital identity. JellyFish Mobile employs robust privacy measures to protect your personal information. From advanced encryption to cold wallet address obfuscation, we go the extra mile to ensure that your digital identity remains secure. Take control of your privacy and enjoy a mobile experience where your personal information is protected.",
+      "picture": "/Vectors/privacy.png",
+      "alignLeft": true
+    },
+    {
+      "title": "Customer Satisfaction",
+      "detail": "Join our ever-growing community of satisfied users who have experienced the transformative power of JellyFish Mobile. We take pride in delivering a mobile connectivity solution that prioritizes security, web3 integration, and privacy. Our commitment to customer satisfaction drives us to continuously improve our services, ensuring that you have a seamless and empowered mobile experience.",
+      "picture": "/Vectors/review.png",
+      "alignLeft": false
+    }
+  ],
+  "featuredOn": [
+    {
+      "image": "/Assets/FeaturedIn/coinMarket.png",
+      "route": "https://coinmarketcap.com/"
+    },
+    {
+      "image": "/Assets/FeaturedIn/newsBtc.png",
+      "route": "https://www.newsbtc.com/"
+    },
+    {
+      "image": "/Assets/FeaturedIn/yahoo.png",
+      "route": "https://finance.yahoo.com/?guccounter=1&guce_referrer=aHR0cHM6Ly9qZWxseWZpLm1lLw&guce_referrer_sig=AQAAAIiBz6GBNZqLcRjrOUYOoA9naMm4dZzpyjdEbI2YFnBhGYK6uHlVTFLPId4BeE7m_U7DPAfpAuzqgqZ0GyXnHhcNx76qc9LwBLIdg4Iii8NTbp0K_0wrA8AjgeExlTHB4pgImT-ws1CwHEb_b7lwDgU1PXkbh3GUgRMF9wGZOcyR"
+    },
+    {
+      "image": "/Assets/FeaturedIn/coinPedia.png",
+      "route": "https://coinpedia.org/"
+    },
+    {
+      "image": "/Assets/FeaturedIn/menaFn.png",
+      "route": "https://menafn.com/"
+    },
+    {
+      "image": "/Assets/FeaturedIn/benzinga.png",
+      "route": "https://www.benzinga.com/"
+    },
+    {
+      "image": "/Assets/FeaturedIn/Ap.png",
+      "route": "https://apnews.com/"
+    },
+    {
+      "image": "/Assets/FeaturedIn/digitalJournal.png",
+      "route": "https://www.digitaljournal.com/"
+    },
+    {
+      "image": "/Assets/FeaturedIn/zyCrypto.png",
+      "route": "https://zycrypto.com/"
+    },
+    {
+      "image": "/Assets/FeaturedIn/theCrypto.png",
+      "route": "https://thecryptobasic.com/"
+    }
+  ],
+  "team": [
+    {
+      "name": "Sean Hsieh",
+      "role": "CEO, Founder",
+      "linkedin": "https://www.linkedin.com/in/sean-hsien-320aa0286/",
+      "avatar": "/Assets/Team/seanhsieh.png"
+    },
+    {
+      "name": "Ethan Huang",
+      "role": "Blockchain Architect, Co-Founder",
+      "linkedin": "https://www.linkedin.com/in/ethan-huang-1322b1286/",
+      "avatar": "/Assets/Team/ethanhuang.png"
+    },
+    {
+      "name": "Oshiko Wong",
+      "role": "Tech Lead",
+      "linkedin": "https://www.linkedin.com/in/oshiko-w-09042a5/",
+      "avatar": "/Assets/Team/oshikowong.png"
+    },
+    {
+      "name": "John Kai",
+      "role": "Business Development",
+      "linkedin": "https://www.instagram.com/writejohnkai/",
+      "avatar": "/Assets/Team/johnkai.png"
+    },
+    {
+      "name": "Gerry Campbell",
+      "role": "Community Manager",
+      "linkedin": "https://www.linkedin.com/in/gerry-campbell-ab9088222/",
+      "avatar": "/Assets/Team/gerrycampbell.png"
+    },
+    {
+      "name": "Usama Bin Tariq",
+      "role": "Community Manager",
+      "linkedin": "https://www.linkedin.com/in/usama-bin-tariq-699132202/",
+      "avatar": "/Assets/Team/usama.png"
+    },
+    {
+      "name": "HS. Chong",
+      "role": "Tech Developer",
+      "linkedin": "https://www.linkedin.com/in/hui-san-chong-76863b86/",
+      "avatar": "/Assets/Team/chonghuisan.png"
+    }
+  ],
+  "advisory": [
+    {
+      "name": "Alvin Liew",
+      "role": "Telco Advisory",
+      "linkedin": "https://www.linkedin.com/in/digitalizationwithesim/",
+      "avatar": "/Assets/Team/alvinliew.png"
+    },
+    {
+      "name": "Richard Tang",
+      "role": "Telco Advisory",
+      "linkedin": "https://www.linkedin.com/in/richard-tang-18b0b012b/",
+      "avatar": "/Assets/Team/richardtang.png"
+    },
+    {
+      "name": "William Ku",
+      "role": "Telco Advisory",
+      "linkedin": "https://www.linkedin.com/in/william-ku-488674/",
+      "avatar": "/Assets/Team/williamku.png"
+    },
+    {
+      "name": "Norhizam Kadir",
+      "role": "Fintech/Legal Advisory",
+      "linkedin": "https://www.linkedin.com/in/norhizam-kadir-a31aa742/",
+      "avatar": "/Assets/Team/norhizamkadir.png"
+    },
+    {
+      "name": "Abdullah Hidayat Mohamad",
+      "role": "Fintech/Legal Advisory",
+      "linkedin": "https://www.linkedin.com/in/abdullahhidayatmohamad/",
+      "avatar": "/Assets/Team/hidayat.png"
+    },
+    {
+      "name": "Zira Hamdan",
+      "role": "Fintech/Legal Advisory",
+      "linkedin": "https://www.linkedin.com/in/hazirah-hamdan/",
+      "avatar": "/Assets/Team/zirahamdan.png"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Challenges in Expanding Web3 Adoption",
+      "picture": "/Assets/3.png",
+      "link": "https://matters.town/@yitenhuang/373361-challenges-in-expanding-web3-adoption-moving-beyond-the-web2-majority-bafybeif5ba5dxsx22xd7iytzs5xz5zs7sdnf5xhtvwwl7wkczxqwcyzpni",
+      "summary": "Web3 technology is rapidly gaining popularity as a promising solution for decentralized, secure, and democratized digital interactions. However, despite its potential"
+    },
+    {
+      "title": "Not your keys, Not your crypto",
+      "picture": "/Assets/Blogs/Blog12.webp",
+      "link": "https://matters.town/@yitenhuang/373356-not-your-keys-not-your-crypto-bafybeih6y6imvpfjtkf6kuysih6acmnutleqorpnatw36gdo5je7qiszeu",
+      "summary": "Cryptocurrency has become increasingly popular in recent years, and the need for secure storage solutions for digital assets has grown alongside it. The saying not your keys, not your crypto"
+    },
+    {
+      "title": " Embrace the Future of Fully Secure Decentralized Mobile Communications ",
+      "picture": "/Assets/Blogs/Blog2.webp",
+      "link": "https://medium.com/@jellyfishmobile/embrace-the-future-of-fully-secure-decentralized-mobile-communications-416855422cbc",
+      "summary": "Discover a mobile virtual network operator (MVNO) that leverages Web3 technologies and blockchain integration to revolutionize mobile communications"
+    },
+    {
+      "title": "Embracing Wallet On SIM",
+      "picture": "/Assets/Blogs/Blog3.webp",
+      "link": "https://medium.com/@jellyfishmobile/embracing-wallet-on-sim-the-key-to-unrivaled-mobile-crypto-security-%EF%B8%8F-55cc75c5e09",
+      "summary": "In the dynamic world of cryptocurrencies, mobile platforms have become both a gateway to digital wealth and a playground for cybercriminals. Trojan apps,"
+    },
+    {
+      "title": "Embrace Web3-Based Telcos for Secure Mobile Revolution",
+      "picture": "/Assets/Blogs/Blog4.webp",
+      "link": "https://medium.com/@jellyfishmobile/embrace-web3-based-telcos-for-secure-mobile-revolution-44202e02f3ba",
+      "summary": "In our digitally interconnected world, mobile communication plays a vital role in our daily lives. However, traditional telecom companies have unintentionally introduced"
+    },
+    {
+      "title": "Unleashing the Potential of Wallet On SIM for Unrivaled Crypto Security",
+      "picture": "/Assets/Blogs/Blog5.webp",
+      "link": "https://medium.com/@jellyfishmobile/unleashing-the-potential-of-wallet-on-sim-for-unrivaled-crypto-security-7dc50e07be4b",
+      "summary": "In the dynamic world of cryptocurrencies, mobile platforms have become both a gateway to digital wealth and a playground for cybercriminals. Trojan apps, lurking in disguise"
+    },
+    {
+      "title": "Exploring the Role of Web3 in Modern Telecommunication",
+      "picture": "/Assets/Blogs/Blog6.webp",
+      "link": "https://medium.com/@jellyfishmobile/exploring-the-role-of-web3-in-modern-telecommunication-37eb1e2b38e1",
+      "summary": "Imagine a world where you no longer have to remember phone numbers or keep track of numerous contacts. A world where your identity is securely tied to you, rather than to a "
+    },
+    {
+      "title": "Empowering Digital Security with Decentralized Identifiers (DIDs)",
+      "picture": "/Assets/Blogs/Blog7.webp",
+      "link": "https://medium.com/@jellyfishmobile/%EF%B8%8Fempowering-digital-security-with-decentralized-identifiers-dids-in-web3-mobile-communications-2ed287de07fc",
+      "summary": "In the rapidly evolving landscape of mobile communications, the concept of digital identity has become more critical than ever. Traditional mobile numbers, once considered s"
+    },
+    {
+      "title": "Embrace Web3-Based Telcos for Secure Mobile Revolution!",
+      "picture": "/Assets/Blogs/Blog8.webp",
+      "link": "https://medium.com/@jellyfishmobile/embrace-web3-based-telcos-for-secure-mobile-revolution-ec00284650c3",
+      "summary": "In our digitally interconnected world, mobile communication plays a vital role in our daily lives. However, traditional telecom companies have unintentionally introduced signif"
+    },
+    {
+      "title": "Secure Your Crypto with Wallet On SIM",
+      "picture": "/Assets/Blogs/Blog9.webp",
+      "link": "https://medium.com/@jellyfishmobile/secure-your-crypto-with-wallet-on-sim-e657ba737c52",
+      "summary": "Discover the growing threat of Trojan apps to mobile crypto security and explore the groundbreaking solution of Isolated Wallet-On-SIM. Learn how this innovative technology fortifie "
+    },
+    {
+      "title": "Enhancing Global Connectivity",
+      "picture": "/Assets/Blogs/Blog10.webp",
+      "link": "https://medium.com/@jellyfishmobile/enhancing-global-connectivity-web3-mvnos-impact-on-cross-border-communications-8531b0bce37c",
+      "summary": "In our increasingly connected world, cross-border communications have become essential for businesses and individuals alike. However, traditional telecom networks have long presented challenges"
+    },
+    {
+      "title": "Decentralized Identifiers (DIDs): Empowering Self-Sovereign Identity in the Web3 Era",
+      "picture": "/Assets/Blogs/Blog10.png",
+      "link": "https://medium.com/@jellyfishmobile/ethan-huang-on-linkedin-decentralized-identifiers-dids-empowering-self-sovereign-identity-in-a40a772b3383",
+      "summary": "Decentralized Identifiers (DIDs) are a critical component of the Web3 ecosystem, designed to provide users with self-sovereign identity and full control over their digital identitie"
+    },
+    {
+      "title": "Web3: Revolutionizing Telecom with Decentralized Identity",
+      "picture": "/Assets/Blogs/Blog11.webp",
+      "link": "https://medium.com/@jellyfishmobile/web3-revolutionizing-telecom-with-decentralized-identity-beb9f29f4cb6",
+      "summary": "the realm of decentralized technology, Web3 presents a transformative vision for modern telecommunication. By replacing traditional mobile numbers with decentralized identities, Web3 has"
+    }
+  ]
 }
