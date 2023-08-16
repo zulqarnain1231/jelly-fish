@@ -3,6 +3,7 @@ import SectionHeading from "@/components/Shared/Typography/SectionHeading";
 import Wrapper from "@/components/Shared/Wrapper";
 import KeyPoint from "./KeyPoint";
 import Data from "../../../constants/Json/Data.json";
+import Img from "@/components/Shared/Image/Img";
 const About = () => {
   const { about } = Data;
   return (
@@ -13,12 +14,19 @@ const About = () => {
                  Connecting You To The
                   Future!"
         />
-        <div className="w-full gap-10">
-          <div className="w-full md:w-[70%] mx-auto flex flex-col items-start justify-start gap-8">
+        <div className="w-full lg:grid flex flex-col-reverse lg:grid-cols-3 lg:gap-6 gap-10">
+          <aside className="md:col-span-2 w-full flex flex-col items-start justify-start gap-8">
             {about.map((item: string, index: number) => {
               return <KeyPoint key={index} text={item} />;
             })}
-          </div>
+          </aside>
+          <aside className="w-full h-full flex items-center justify-center">
+            <Img
+              src="/Assets/10.png"
+              imgContainer="lg:w-full w-[300px] md:w-[350px] md:h-[350px] lg:h-full h-[300px] pointer-events-none "
+              imgStyle="object-fill rounded-oval pointer-events-none"
+            />
+          </aside>
         </div>
       </div>
     </Wrapper>
