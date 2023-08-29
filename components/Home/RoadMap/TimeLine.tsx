@@ -17,28 +17,33 @@ const TimeLine = () => {
   return (
     <div className="w-full flex items-center justify-center">
       <Timeline position={matches ? "alternate" : "right"}>
-        <TimelineItem className="flex items-center justify-start gap-0 lg:gap-6">
-          <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
+        <TimelineItem className="flex items-center justify-start gap-0 lg:gap-6 z-10">
+          <TimelineSeparator className="md:h-[380px] sm:h-[420px] h-[500px]">
             <TimelineDot className=" h-[16px] w-[16px]" />
             <TimelineConnector className="" />
           </TimelineSeparator>
           <TimelineContent>
-            <MapCard title="MVP DEVELOPMENT" details={Data.roadMap.phase1} />
+            <MapCard
+              title="MVP DEVELOPMENT"
+              styles="py-4"
+              details={Data.roadMap.phase1}
+            />
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem className="flex items-center justify-start gap-0 lg:gap-6">
-          <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
+        <TimelineItem className="flex items-center justify-start gap-0 lg:gap-6 z-10">
+          <TimelineSeparator className="md:h-[380px] lg:h-[400px] sm:h-[420px] h-[540px]">
             <TimelineDot className=" h-[16px] w-[16px]" />
             <TimelineConnector className="" />
           </TimelineSeparator>
           <TimelineContent>
             <MapCard
               title="PROFILE DEVELOPMENT"
+              styles="py-4"
               details={Data.roadMap.phase2}
             />
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem className="flex items-center justify-start gap-0 lg:gap-6">
+        <TimelineItem className="flex items-center justify-start gap-0 lg:gap-6 z-10">
           <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
             <TimelineDot className=" h-[16px] w-[16px]" />
             <TimelineConnector className="" />
@@ -50,7 +55,7 @@ const TimeLine = () => {
             />
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem className="flex items-start justify-start gap-0 lg:gap-6">
+        <TimelineItem className="flex items-start justify-start gap-0 lg:gap-6 z-10">
           <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
             <TimelineDot className=" h-[16px] w-[16px]" />
             <TimelineConnector className="" />

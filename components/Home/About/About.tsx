@@ -15,9 +15,11 @@ const About = () => {
                   Future!"
         />
         <div className="w-full lg:grid flex flex-col-reverse lg:grid-cols-3 lg:gap-6 gap-10">
-          <aside className="md:col-span-2 w-full flex flex-col items-start justify-start gap-8">
-            {about.map((item: string, index: number) => {
-              return <KeyPoint key={index} text={item} />;
+          <aside className="md:col-span-2 w-full flex flex-col items-start justify-start gap-5">
+            {about.map((item: any, index: number) => {
+              return (
+                <KeyPoint key={index} text={item.text} title={item.title} />
+              );
             })}
           </aside>
           <aside className="w-full h-full flex items-center justify-center">

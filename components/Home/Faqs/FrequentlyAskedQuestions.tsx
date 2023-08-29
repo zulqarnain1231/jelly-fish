@@ -10,7 +10,7 @@ import Wrapper from "@/components/Shared/Wrapper";
 
 const FrequentlyAskedQuestions = () => {
   return (
-    <Wrapper id="faq" style="lg:py-16 py-10 bg-white-main relative">
+    <Wrapper id="faq" style="lg:py-16 py-10 relative">
       <div className="w-full flex flex-col items-center justify-start gap-16">
         <SectionHeading text="Frequently Asked Questions" />
         <div className="w-full">
@@ -52,7 +52,7 @@ const FrequentlyAskedQuestions = () => {
       </div>
 
       {/* top gradient */}
-      <span className="absolute top-[10%] right-[5%] md:w-[250px] w-[100px] md:h-[250px] h-[100px] transform-[rotate(161.99deg)] opacity-20 bg-[#C33764] shadow-circle rounded-full md:blur-[100px] blur-[50px] pointer-events-none" />
+      <span className="absolute top-[10%] right-[5%] md:w-[250px] w-[100px] md:h-[250px] h-[100px] transform-[rotate(161.99deg)] opacity-20 bg-[#00CCFF] shadow-circle rounded-full md:blur-[100px] blur-[50px] pointer-events-none" />
       <span className="absolute top-[10%] right-[5%] md:w-[250px] w-[100px] md:h-[250px] h-[100px] transform-[rotate(161.99deg)] opacity-20 bg-brand-secondary shadow-circle rounded-full md:blur-[100px] blur-[50px] pointer-events-none" />
     </Wrapper>
   );

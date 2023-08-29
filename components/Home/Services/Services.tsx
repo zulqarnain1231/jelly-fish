@@ -1,65 +1,141 @@
+"use client";
 import Wrapper from "@/components/Shared/Wrapper";
 import React from "react";
-import { BsFillPersonCheckFill } from "react-icons/bs";
-import { FaCircleHalfStroke } from "react-icons/fa6";
-import { SlLock } from "react-icons/sl";
-import { RiFolderSettingsLine } from "react-icons/ri";
 import ServiceCard from "./ServiceCard";
-import OutlinedButton from "@/components/Shared/Buttons/OutlinedButton";
 import SectionHeading from "@/components/Shared/Typography/SectionHeading";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Mousewheel, Autoplay, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import {
+  FaCircleHalfStroke,
+  FaRegHandshake,
+  FaWallet,
+  FaSimCard,
+} from "react-icons/fa6";
+import { MdOutlineSecurity } from "react-icons/md";
+import { RiRemoteControlLine } from "react-icons/ri";
+import { MdOutlineNoEncryptionGmailerrorred } from "react-icons/md";
 
 const Services = () => {
   const services = [
     {
-      title: "Protection",
-      icon: <SlLock className="h-[28px] w-[28px] text-brand-secondary" />,
-      description: "Personal, sensitive user data is protected at all times.",
+      title: "Cold Wallet Isolation",
+      icon: <FaWallet className="h-[28px] w-[28px] text-brand-secondary" />,
+      background: "bg-[#F25022]",
+      description:
+        "Safeguard your funds by isolating the cold wallet from your phone's operating system.",
     },
     {
-      title: "Transparency",
+      title: "Secure Boot Process",
       icon: (
-        <FaCircleHalfStroke className="h-[24px] w-[24px] text-brand-secondary" />
+        <MdOutlineSecurity className="h-[24px] w-[24px] text-brand-secondary" />
       ),
+      background: "bg-[#7FBA00]",
       description:
-        "The public chain over proof of stake allows users to see transparently when and from whom their personal data was requested from the non-public side chain",
+        "Ensure the integrity of the software running on your device, preventing unauthorized modifications.",
     },
     {
-      title: "Verified",
+      title: "Remote Management (OTA)",
       icon: (
-        <BsFillPersonCheckFill className="h-[28px] w-[28px] text-brand-secondary" />
+        <RiRemoteControlLine className="h-[28px] w-[28px] text-brand-secondary" />
       ),
+      background: "bg-[#00A4EF]",
       description:
-        "Institutions can be tagged as verified and will only have access to the just the specific personal data they need not more.",
+        "Receive security patches and policy enforcement updates remotely for optimal protection.",
     },
     {
-      title: "Control",
+      title: "RSA & ECC:",
       icon: (
-        <RiFolderSettingsLine className="h-[28px] w-[28px] text-brand-secondary" />
+        <FaRegHandshake className="h-[28px] w-[28px] text-brand-secondary" />
       ),
+      background: "bg-[#FFB900]",
       description:
-        "Users have complete sovereignty over their data. Institutions can be verified to access information but the access is only granted if the user has approved the data as read-only. This enables unprecedented levels of control over own data.",
+        "Enjoy secure digital signatures and a robust handshake between your mobile device and the network.",
+    },
+    {
+      title: "AES128 Encryption",
+      icon: (
+        <MdOutlineNoEncryptionGmailerrorred className="h-[28px] w-[28px] text-brand-secondary" />
+      ),
+      background: "bg-[#F25022]",
+      description:
+        "Your data is protected with state-of-the-art encryption technology.",
+    },
+    {
+      title: "SIM Swap Prevention",
+      icon: <FaSimCard className="h-[28px] w-[28px] text-brand-secondary" />,
+      background: "bg-[#7FBA00]",
+      description:
+        "Your SIM can only be recovered through seed keys generated upon SIM activation.",
+    },
+    {
+      title: "Cold Wallet Address Obfuscation",
+      icon: <FaWallet className="h-[28px] w-[28px] text-brand-secondary" />,
+      background: "bg-[#00A4EF]",
+      description:
+        "Enhance your privacy with obfuscated cold wallet addresses.",
     },
   ];
   return (
-    <Wrapper style="md:py-16 py-10">
+    <Wrapper style="md:py-16 py-10 overflow-hidden">
       <div className="w-full h-full flex flex-col items-center justify-start gap-16">
-        <SectionHeading text="Peer To Peer Exchange" />
-        <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 lg:gap-4 gap-8 md:gap-6">
-          {services.map((item: any, index: number) => {
-            return (
-              <ServiceCard
-                key={index}
-                title={item.title}
-                description={item.description}
-                icon={item.icon}
-              />
-            );
-          })}
+        <SectionHeading text="Our Core Features" />
+        <div className="w-full h-[450px] max-w-full md:px-6 px-4">
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              960: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1124: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            modules={[Pagination, Mousewheel, Autoplay]}
+            className="w-full h-full"
+          >
+            {services.map((item: any, index: number) => {
+              return (
+                <SwiperSlide key={index}>
+                  <ServiceCard
+                    key={index}
+                    background={item.background}
+                    title={item.title}
+                    description={item.description}
+                    icon={item.icon}
+                  />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
-        <OutlinedButton
-          text="Deploy your Jellyfish smart contract"
-          style="h-[56px] w-[320px]"
-        />
+        <a
+          href="/"
+          className={`h-[56px] w-[320px] flex items-center justify-center  text-brand-primary text-[16px] font-semibold rounded-[6px] relative outlinedButton`}
+          download={"/Pdfs/WhitePaper.pdf"}
+        >
+          Download Our Whitepaper
+        </a>
       </div>
     </Wrapper>
   );
