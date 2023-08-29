@@ -17,7 +17,7 @@ const FilledButton: React.FC<Props> = ({
     <button
       type={type}
       onClick={event}
-      className={`flex items-center justify-center bg-brand-primary border-[2px] border-brand-primary hover:border-brand-secondary text-white-main text-[16px] font-semibold shadow-main rounded-[6px] ${style} filledButton`}
+      className={`flex items-center justify-center bg-brand-primary text-white-main text-[16px] font-semibold rounded-[6px] ${style} filledButton filledButton-animated relative`}
     >
       {text}
     </button>

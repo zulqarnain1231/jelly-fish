@@ -17,7 +17,7 @@ const Img = ({
   src,
 }: Props) => {
   return (
-    <div className={`relative ${imgContainer}`}>
+    <div className={`relative pointer-events-none ${imgContainer}`}>
       <Image
         alt={alt}
         sizes=""
