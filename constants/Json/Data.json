@@ -23,14 +23,30 @@
     }
   ],
   "about": [
-    "JellyFish Mobile is a groundbreaking MVNO that integrates web3 technologies with mobile connectivity.",
-    "Mission: Revolutionize the internet experience and access to online services.",
-    "Unlock the full potential of web3 on your mobile device, bridging traditional telecom networks and web3 platform.",
-    "Connect to DeFi apps, deploy smart contracts, and access DApps seamlessly.",
-    "Prioritize security and privacy with advanced encryption and cold wallet isolation.",
-    "Offers a wide range of web3 features, DeFi connections, and DApp support.",
-    "Join JellyFish Mobile for cutting-edge mobile connectivity and web3 services.",
-    "Experience the future of mobile internet and redefine digital interactions."
+    {
+      "title": "Enhanced Security:",
+      "text": "Safeguard your data with unique crypto addresses, reducing sim swapping risks and enhancing overall security."
+    },
+    {
+      "title": "Smooth Transition:",
+      "text": "Easily switch to Jellyfish Mobile using eSIM or uSIM options for a hassle-free setup experience."
+    },
+    {
+      "title": "Global Connectivity:",
+      "text": "Stay connected worldwide with eSIM/uSIM, eliminating the need for physical SIM card changes while traveling."
+    },
+    {
+      "title": "Business Security:",
+      "text": "Strengthen business communication security with co-branded eSIM/uSIM, streamlining transactions and protecting assets."
+    },
+    {
+      "title": "Community Influence: ",
+      "text": "Hold JFISH tokens to contribute to Jellyfish DAO decisions, embracing decentralized governance."
+    },
+    {
+      "title": "Local Currency Transactions:  ",
+      "text": "Seamlessly transact in local currency via integrated payment gateways, bridging crypto and fiat transactions."
+    }
   ],
   "roadMap": {
     "phase1": [

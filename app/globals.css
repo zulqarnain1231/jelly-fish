@@ -13,7 +13,7 @@ body {
 .underlineEffect::before {
   content: "";
   position: absolute;
-  height: 1.5px;
+  height: 2px;
   width: 0%;
   bottom: -1px;
   left: 50%;
@@ -24,7 +24,7 @@ body {
 .underlineEffect::after {
   content: "";
   position: absolute;
-  height: 1.5px;
+  height: 2px;
   width: 0%;
   bottom: -1px;
   right: 50%;
@@ -47,13 +47,98 @@ body {
   box-shadow: 32px 32px 65px #e3e3e3, -32px -32px 65px #ffffff;
 }
 /* filled button styles here */
-.filledButton {
-  transition: all 0.2s ease-in;
+/* .filledButton {
+  transition: all 0.5s ease-in;
   position: relative;
-  overflow: hidden;
-  z-index: 1;
 }
-.filledButton:before {
+.filledButton svg {
+  height: 100%;
+  border-radius: 6px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.filledButton rect {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 0;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+} */
+/* .filledButton:hover {
+  background: black;
+  font-weight: 700;
+}
+
+.filledButton:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+} */
+
+.filledButton:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.filledButton:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.filledButton::after {
+  content: "";
+  display: inline-block;
+  background-color: #4b7dd349;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.filledButton:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+/* .filledButton-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+} */
+.outlinedButton {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(246, 240, 240, 0);
+  outline: 1px solid;
+  outline-color: rgba(13, 13, 234, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.outlinedButton:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px #4080f2;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+}
+
+/* .filledButton:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -66,9 +151,9 @@ body {
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -1;
-}
+} */
 
-.filledButton:after {
+/* .filledButton:after {
   content: "";
   position: absolute;
   left: 55%;
@@ -81,28 +166,26 @@ body {
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -1;
-}
-
-.filledButton:hover:before {
-  top: -35%;
-  background-color: #943ce3;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.filledButton:hover:after {
-  top: -45%;
-  background-color: #943ce3;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
+} */
 
 /* gradient here */
-.mainGradient {
-  background: rgb(64, 128, 242);
-  background: linear-gradient(
-    90deg,
-    rgba(64, 128, 242, 1) 29%,
-    rgba(148, 60, 227, 1) 57%
+
+.btnGradient {
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
   );
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 13px 26px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.16);
+}
+
+.btnGradient:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 /* styles for mui timeline */
@@ -206,26 +289,30 @@ body {
 .MuiTimelineContent-positionLeft {
   padding: 0px 8px !important;
 }
-/*slick style */
-.slick-slider {
-  position: unset !important;
+
+/* styles to apply backgroudn to accordin when expanded */
+.Mui-expanded .MuiAccordion-region {
+  /* background-color: #008026 !important; */
+  transition: ease-in 0.2s !important;
 }
-.slick-dots {
-  position: unset !important;
-  margin-top: 10px !important;
+.MuiAccordion-root .Mui-expanded {
+  /* background-color: #008026 !important; */
+  transition: ease-in 0.2s !important;
 }
-.slick-dots li button::before {
-  font-size: 10px !important;
-  color: #943ce3 !important;
+.MuiAccordion-root {
+  border-radius: 16px !important;
+  background-color: #f2f4f9;
+  padding: 10px 6px !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -30px;
+  z-index: 10;
 }
-.slick-dots li.slick-active button:before {
-  color: #943ce3 !important;
-  opacity: unset !important;
+.MuiAccordion-gutters {
+  margin: 1.5rem 0 !important;
+}
+.MuiAccordion-root::before {
+  display: none !important;
 }
 
-.slick-slide .slick-active div {
-  display: unset !important;
-}
 @media (min-width: 1025px) {
   .roadMap {
     background-color: #f5f7fd;

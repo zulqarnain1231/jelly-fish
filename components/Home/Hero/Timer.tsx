@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { calculateTimeLeft } from "@/utils/Timer";
 
 const Timer = () => {
-  const targetDate = "2023-08-27"; // Replace with your target date
+  const targetDate = "2024-08-27"; // Replace with your target date
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
   useEffect(() => {
     const interval = setInterval(() => {
